@@ -16,5 +16,16 @@
   programs.git.settings = {
     user.name = "Aspen Price";
     user.email = "aspen@aspen-otr.com";
+
+    init.defaultBranch = "main";
+
+    alias = {
+      l = "log --oneline";
+      s = "status --short";
+      c = "commit";
+      cm = "commit --message";
+      p = "push --follow-tags --force-with-lease";
+      f = "fetch --tags";
+    };
   };
 }

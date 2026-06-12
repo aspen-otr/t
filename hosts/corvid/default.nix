@@ -1,10 +1,15 @@
-{ ... }:
+{ pkgs, username, ... }:
 {
   imports =
     [
       ../../system.nix
       ./hardware-configuration.nix
     ];
+
+  users.users.${username} = { # Corvid always has this.
+    shell = pkgs.zsh;
+    ignoreShellProgramCheck = true;
+  };
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;

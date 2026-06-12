@@ -2,6 +2,13 @@
 {
   programs.starship = {
     enable = true;
+    enableZshIntegration = true;
+    settings = {
+      format =
+        ''
+        $directory$git_branch$git_status$status$character
+        '';
+    };
   };
 
   programs.zsh = {
@@ -19,7 +26,7 @@
       nrs = "sudo nixos-rebuild switch";
     };
     defaultKeymap = "viins";
-    initContent = lib.mkOrder 1200 ''
+    initContent = lib.mkOrder 800 ''
       autoload -Uz add-zsh-hook
       autoload -Uz promptinit && promptinit
       function __git_branch() {
