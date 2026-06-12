@@ -4,6 +4,7 @@
     # TODO Fillout
   ];
 
+  programs.emacs.enable = true;
   services.emacs = {
     enable = true;
     startWithUserSession = true;
