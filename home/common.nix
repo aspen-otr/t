@@ -52,20 +52,6 @@ in
     mpv.enable = true;
   };
 
-  services.displayManager.ly = {
-    enable = true;
-    settings = {
-      animation = "colormix";
-      auth_fails = 5;
-      brightness_up_key = null;
-      brightness_down_key = null;
-      clear_password = true;
-      numlock = true;
-      show_password = "F7";
-      vi_mode = true;
-    };
-  };
-
   xdg = {
     enable = true;
     cacheHome = HOME + "/.local/cache";
