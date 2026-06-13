@@ -39,5 +39,7 @@
     '';
   };
 
+  home.sessionVariables.STARSHIP_CACHE = config.xdg.cacheHome;
+
   home.stateVersion = "25.11";
 }
