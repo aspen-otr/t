@@ -17,7 +17,6 @@
     fnott = {
       enable = true;
       settings = {
-        dpi-aware = true;
         low = {
           timeout = 5;
         };
