@@ -13,15 +13,7 @@
 
   services = {
     awww.enable = true;
-
-    fnott = {
-      enable = true;
-      settings = {
-        low = {
-          timeout = 5;
-        };
-      };
-    };
+    fnott.enable = true;
 
     wlsunset = {
       enable = true;
