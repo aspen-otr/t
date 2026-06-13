@@ -6,7 +6,6 @@
 
     wl-clipboard
     hyprpicker
-    fnott
 
     # utils
     wev
@@ -14,6 +13,16 @@
 
   services = {
     awww.enable = true;
+
+    fnott = {
+      enable = true;
+      settings = {
+        dpi-aware = true;
+        low = {
+          timeout = 5;
+        };
+      };
+    };
 
     wlsunset = {
       enable = true;

@@ -77,7 +77,6 @@
     autostart_sh = ''
       awww img ~/pictures/wallpapers/current-wallpaper &
       systemctl restart --user wlsunset &
-      fnott &
     '';
   };
 }
