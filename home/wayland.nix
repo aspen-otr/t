@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
+    awww
     lz4 # awww dep
 
     wl-clipboard
