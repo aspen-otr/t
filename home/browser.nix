@@ -32,7 +32,6 @@
         name = username;
 
         extensions.force = true;
-        search.force = true;
         containersForce = true;
 
         settings = {
