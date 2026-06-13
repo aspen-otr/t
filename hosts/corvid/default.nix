@@ -29,5 +29,7 @@
 
   networking.firewall.enable = false;
 
+  services.displayManager.ly.settings.battery_id = "BAT1";
+
   system.stateVersion = "25.11";
 }
