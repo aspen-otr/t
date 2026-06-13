@@ -48,8 +48,8 @@
         };
 
         search.force = true; 
-        search.default = "DuckDuckGo";
-        search.privateDefault = "DuckDuckGo";
+        search.default = "ddg";
+        search.privateDefault = "ddg";
 
         search.engines = {
           nix-packages = {
