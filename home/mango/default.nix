@@ -75,7 +75,8 @@
     };
 
     autostart_sh = ''
-      awww img ~/pictures/wallpapers/current-wallpaper
+      awww img ~/pictures/wallpapers/current-wallpaper &
+      systemctl restart --user wlsunset &
     '';
   };
 }
