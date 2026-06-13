@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 let
-  userhome = config.home.homeDirectory;
+  HOME = config.home.homeDirectory;
 in
 {
   home.packages = with pkgs; [
@@ -54,7 +54,7 @@ in
 
   xdg = {
     enable = true;
-    cacheHome = userhome + "/.local/cache";
+    cacheHome = HOME + "/.local/cache";
 
     # configFile."mimeapps.list".force = true;
 
@@ -63,15 +63,15 @@ in
       createDirectories = true;
       setSessionVariables = true;
 
-      desktop = userhome + "/desktop";
-      download = userhome + "/downloads";
-      documents = userhome + "/documents";
-      music = userhome + "/music";
-      pictures = userhome + "/pictures";
-      projects = userhome + "/code";
-      publicShare = userhome + "/public";
-      templates = userhome + "/templates";
-      videos = userhome + "/videos";
+      desktop = HOME + "/desktop";
+      download = HOME + "/downloads";
+      documents = HOME + "/documents";
+      music = HOME + "/music";
+      pictures = HOME + "/pictures";
+      projects = HOME + "/code";
+      publicShare = HOME + "/public";
+      templates = HOME + "/templates";
+      videos = HOME + "/videos";
 
       extraConfig = {
         SCREENSHOT_DIR = "${config.xdg.userDirs.pictures}/screenshots";
