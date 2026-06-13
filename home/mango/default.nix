@@ -4,6 +4,7 @@
 
   wayland.windowManager.mango = {
     enable = true;
+    systemd.enable = true;
 
     settings = {
       animations = 0;
@@ -72,5 +73,9 @@
         "None,XF86AudioPlay,spawn,rmpc togglepause"
       ];
     };
+
+    autostart_sh = ''
+      awww img ~/pictures/wallpapers/current-wallpaper
+    '';
   };
 }
