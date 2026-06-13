@@ -36,8 +36,21 @@
         containersForce = true;
 
         settings = {
-          "extensions.activeThemeId" = "{3c9f3c5d-ec80-455f-bd7c-4f2b51a1a4d9}";
+          "extensions.activeThemeID" = "{3c9f3c5d-ec80-455f-bd7c-4f2b51a1a4d9}";
+
+          "privacy.resistFingerprinting" = true;
+          "sidebar.verticalTabs" = true;
+          "sidebar.verticalTabs.dragToPinPromo.dismissed" = true;
+          "browser.startup.homepage" = "https://aspen-otr.com";
+          "browser.search.suggest.enabled" = false;
+          "browser.urlbar.suggest.searches" = false;
+          "browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts" = false;
+          "browser.newtabpage.activity-stream.discoverystream.sections.interestPicker.visibleSections" = "";
         };
+
+        search.force = true; 
+        search.default = "DuckDuckGo";
+        search.privateDefault = "DuckDuckGo";
 
         search.engines = {
           nix-packages = {
@@ -53,11 +66,7 @@
             icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
             definedAliases = [ "@np" ];
           };
-
-          # TODO: chess-programming-wiki = {};
         };
-
-        # TODO: extensions = {};
       };
     };
   };
