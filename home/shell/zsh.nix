@@ -27,6 +27,12 @@
     };
     defaultKeymap = "viins";
     initContent = lib.mkOrder 800 ''
+      function nsf() {
+        host="$1"
+        [ -z "$host" ] && host="$(hostname)"
+        [ -n "$host" ] && sudo nixos-rebuild switch --flake .#$host
+      }
+
       autoload -Uz add-zsh-hook
       autoload -Uz promptinit && promptinit
       function __git_branch() {
