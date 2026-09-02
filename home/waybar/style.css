@@ -1,0 +1,14 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Agave Nerd Font";
+
+    background-color: #000;
+    color: #fff;
+}
+
+#workspaces {
+    button {
+        padding: 0 5px;
+    }
+}

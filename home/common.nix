@@ -35,8 +35,12 @@ in
     acpi
 
     go
+    gopls
     nodejs
     rustup
+    python3
+
+    prettier
 
     typst
     tinymist

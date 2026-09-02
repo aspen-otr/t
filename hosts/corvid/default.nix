@@ -3,6 +3,7 @@
   imports =
     [
       ../../system.nix
+      ../../home/dm/gdm.nix
       ./hardware-configuration.nix
     ];
 
@@ -10,6 +11,8 @@
     shell = pkgs.zsh;
     ignoreShellProgramCheck = true;
   };
+
+  programs.mango.enable = true;
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;

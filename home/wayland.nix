@@ -21,5 +21,19 @@
     };
   };
 
-  programs.waybar.enable = false;
+  programs.waybar = {
+    enable = true;
+    settings = {
+      mainBar = {
+        layer = "top";
+        position = "top";
+        height = 25;
+        output = ["eDP-1"];
+        modules-left = ["mango/workspaces"];
+        modules-center = ["mango/window"];
+        modules-right = ["battery" "clock"];
+      };
+    };
+    style = ./waybar/style.css;
+  };
 }

@@ -21,9 +21,10 @@
       "HIST_IGNORE_DUPS"
     ];
     shellAliases = {
-      ls = "eza --group-directories-first";
+      ls = "eza -a --group-directories-first";
       ll = "eza -a --group-directories-first --long";
       nrs = "sudo nixos-rebuild switch";
+      mkdir = "mkdir -p";
     };
     defaultKeymap = "viins";
     initContent = lib.mkOrder 800 ''
@@ -42,6 +43,8 @@
         fi
       }
       PROMPT='[%n@%m:%F{cyan}%2~%F{reset_color}$(__git_branch)%(?.. %F{red}(%?%)%F{reset_color})]%(!.#.$) '
+
+      acpi; date;
     '';
   };
 
